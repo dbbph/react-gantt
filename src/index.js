@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Demos from "./common/Index.jsx";
-import "wx-react-gantt/dist/gantt.css";
+import App from "./App"; // This imports the new file you just created
 
-const root = ReactDOM.createRoot(document.querySelector("#wx_demo_area") || document.body);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-	
-    <Demos />
-  	
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
